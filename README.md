@@ -2,7 +2,7 @@
 
 More from yellowgram: [OSS tools](https://www.yellowgram.dev/oss).
 
-**Status:** public MIT source · not on npm yet · no Polar
+**Status:** public MIT · npm `send-approve-bound@0.1.0` · no Polar
 
 Non-custodial **at-send** gate for ERC-20 / ERC-721 / ERC-1155 approval calldata: per-token spender allowlist, erc20 raw amount / delta caps, unlimited always denied. Compose **after** send-allow. No keys. No simulation.
 

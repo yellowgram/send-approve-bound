@@ -50,7 +50,6 @@
     "name": "yellowgram",
     "url": "https://www.yellowgram.dev"
   },
-  "private": true,
   "dependencies": {
     "viem": "^2.21.0"
   },
