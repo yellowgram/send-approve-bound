@@ -20,9 +20,11 @@
     "policy.agent.example.json",
     "docs/fixtures/offline.expected.txt",
     "SECURITY.md",
+    "CHANGELOG.md",
     "CHARTER.md",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "docs/DEMO.md"
   ],
   "scripts": {
     "build": "tsc",

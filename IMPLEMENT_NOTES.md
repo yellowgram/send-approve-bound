@@ -2,7 +2,7 @@
 
 **As of:** 2026-09-30 (ET)  
 **Against:** `/workspace/send-approve-bound-lg/DESIGN-GATE.md` PASS-with-conditions (DC1–DC15)  
-**Artifact:** `/workspace/send-approve-bound` (still `"private": true`, no remote, no npm publish)
+**Artifact:** `/workspace/send-approve-bound` (still `"private": true`; public remote https://github.com/yellowgram/send-approve-bound; **not** on npm)
 
 ## What changed vs scaffold
 
@@ -16,7 +16,7 @@
 | Middleware | Absent | Thin `eth_sendRawTransaction` handler: unsigned → `-32081`; denies + unparseable → `-32085`; never fail-open |
 | Deny codes | 4 codes | Closed set DC12 (+ `token_not_allowed`, `approve_policy_incomplete`, `tx_unparseable`) |
 | Docs | Scaffold deny table | Verbatim honesty lines DC6/DC7/DC8/DC15 in README + SECURITY |
-| package.json | private, no public URLs | Still private; **no** `repository` / `homepage` / `bugs` / `prepublishOnly`; added `viem` for signed-raw parse only |
+| package.json | private, no public URLs | Still `"private": true` (blocks accidental publish); public `repository` / `homepage` / `bugs`; **not** on npm; no Polar |
 
 ## DC checklist
 
@@ -35,12 +35,12 @@
 | DC11 | satisfied | Handler: `-32081` unsigned; `-32085` deny/unparseable; create forward; no fail-open |
 | DC12 | satisfied | Closed deny-code set only |
 | DC13 | satisfied | Tests cover (1)–(9) + existing unlimited/over-cap/spender/transfer cases |
-| DC14 | satisfied | private; no public URLs / Permit2 table / multicall decoder / sim / key; Soft* ban token only; offline demo updated |
+| DC14 | satisfied | private; Soft* ban token only; offline demo + `docs/DEMO.md`; no npm/Polar/Permit2 product / multicall decoder / sim / key |
 | DC15 | satisfied | Verbatim 721 line in README |
 
 ## Rejected (not shipped)
 
-R1–R17 from DESIGN-GATE remain rejected: no multicall unwind, no Permit2 product, no custody/sim, no global cap, no human decimals, no public remote/npm/Polar, no Soft\* conversion copy.
+R1–R17 from DESIGN-GATE remain rejected: no multicall unwind, no Permit2 product, no custody/sim, no global cap, no human decimals, no npm/Polar, no Soft\* conversion copy. Public GitHub is intentional; npm publish stays LaunchGate + founder.
 
 ## Verification (this implement)
 
