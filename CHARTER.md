@@ -1,10 +1,10 @@
 # send-approve-bound — charter fences
 
-**Status:** LOCAL_SCAFFOLD · private · LaunchGate-before-expansion  
+**Status:** public GitHub · not on npm · LaunchGate-before-expansion  
 **As of:** 2026-09-30 (ET)  
 **First LG candidate:** yes (serial queue: this package first)
 
-This package is a **narrow** agent-ops gate. Keep the surface honest. No public GitHub remote and no npm publish until founder + LaunchGate.
+This package is a **narrow** agent-ops gate. Keep the surface honest. Public GitHub source is OK. No npm publish and no Polar until founder + LaunchGate.
 
 ## Job (P0)
 
@@ -32,7 +32,7 @@ Orthogonal to L2 Send Guard (sim). Complementary to `recv-approval-watch` (detec
 - Per-token spender allowlist + erc20 raw caps; reject `type(uint256).max` / unlimited NFT operator
 - Deny taxonomy aligned with send-deny-codes family (`-32085` for this package)
 - Offline `demo:offline` + unit tests
-- MIT, self-hosted, local-only until founder
+- MIT, self-hosted; public GitHub OK; not on npm until founder
 
 ## Out of scope / fences
 
@@ -42,7 +42,7 @@ Orthogonal to L2 Send Guard (sim). Complementary to `recv-approval-watch` (detec
 | **No simulation** | Does not simulate. Use L2 Send Guard for sim-before-send. |
 | **No Soft\*** | No Soft\* naming, briefs, outreach, or monetization wording in copy or scripts. |
 | **No Polar / checkout URLs** | No purchase SKU, no hosted checkout links in this tree. |
-| **No public/npm until founder** | No public remote, no `npm publish` until LaunchGate + founder GO. |
+| **No npm / Polar until founder** | Public GitHub OK. No `npm publish`, no Polar/checkout until LaunchGate + founder GO. |
 | **No Safe / custody / SaaS / mainnet SLA** | Not a Safe product, not hosted multi-tenant, no mainnet SLA claim. |
 | **No Permit2 product** | Permit2 is `send-permit2-bound`. Do not expand this package into Permit2. |
 | **LaunchGate-before-expansion** | P0 only. Extra selectors / multicall unwind / fleet UX need LaunchGate. |
