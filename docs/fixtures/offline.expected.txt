@@ -1,0 +1,16 @@
+send-approve-bound offline demo
+no keys · no capital · no public RPC · compose after send-allow
+
+1 bounded approve allowlisted → allow=true
+2 unlimited approve → allow=false code=approve_unbounded
+3 bad spender → allow=false code=spender_not_allowed
+4 over cap → allow=false code=approve_over_cap
+5 setApprovalForAll(true) allowlisted → allow=false code=approve_unbounded
+6 transfer calldata pass-through → allow=true
+7 same calldata token B lower cap → allow=false code=approve_over_cap
+8 erc721 large tokenId → allow=true
+9 increaseAllowance delta under cap → allow=true
+10 unknown token → allow=false code=token_not_allowed
+11 multicall selector pass-through → allow=true kind=other
+
+charter: no Soft* · no Polar · no custody · LaunchGate-before-expansion

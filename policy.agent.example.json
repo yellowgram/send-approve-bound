@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "tokens": {
+    "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+      "standard": "erc20",
+      "maxAmountRaw": "1000000",
+      "spenders": ["0x1111111111111111111111111111111111111111"]
+    },
+    "0xcccccccccccccccccccccccccccccccccccccccc": {
+      "standard": "erc721",
+      "spenders": ["0x1111111111111111111111111111111111111111"]
+    }
+  },
+  "_comment": "POISON TEMPLATE. Replace token/spender addresses before use. maxAmountRaw is raw smallest units — this package does not apply decimals."
+}

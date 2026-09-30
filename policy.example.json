@@ -1,0 +1,5 @@
+{
+  "enabled": true,
+  "tokens": {},
+  "_comment": "Default deny-all for approval-shaped calls (empty tokens). Add per-token entries: standard erc20|erc721|erc1155, spenders[], and maxAmountRaw (erc20 only, decimal integer string in smallest unit)."
+}
